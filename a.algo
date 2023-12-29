@@ -1,0 +1,18 @@
+ALGORITHM swap
+VAR
+    a,b,c:string
+BEGIN
+    read(a)
+    read(b)
+    read(c)
+
+IF (a.length>b.length and a.length>c.length) THEN
+    write("a est la chaine la plus longue)
+ELSE_IF (c.length>a.length and c.length>b.length) THEN
+    write("c est la chaine la plus longue")
+
+ELSE
+    write("b est la chaine la plus longue")
+
+END_IF
+END

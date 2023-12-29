@@ -1,0 +1,22 @@
+ALGORITHM checkpoint
+VAR
+    ch:string
+    nombre_de_mots:INTEGER
+    nombre_de_voyelles:INTEGER
+
+BEGIN
+nombre_de_mots=0
+nombre_de_voyelles=0
+    read(ch)
+    write (ch.length)
+    FOR i FROM 0 TO ch.length-1 STEP 1  DO
+        IF (ch[i]=" ") THEN
+            nombre_de_mots=nombre_de_mots+1
+        END_IF
+        IF (ch[i]="a"or "e" or "i" or "u" or "o" or "y") THEN
+            nombre_de_voyelles=nombre_de_voyelles+1
+        END_IF
+    END_FOR
+    write(nombre_de_mots)
+    write(nombre_de_voyelles)
+END
